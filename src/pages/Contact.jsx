@@ -1,14 +1,15 @@
 
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
-
+import usePageTitle from "../hooks/usePageTitle";
 const Contact = () => {
+  usePageTitle("Contact| Daniel Dawit")
   return (
-    <section id="contact" className="py-20 px-6 bg-white">
+    <section id="contact" className="py-20 px-6 bg-transparent text-white">
       <h2 className="text-4xl font-bold text-center mb-12">Contact Me</h2>
 
       <div className="max-w-3xl mx-auto">
         {/* Contact Text */}
-        <p className="text-center text-gray-600 mb-8">
+        <p className="text-center text-white mb-8">
           Have a project in mind or just want to say hi? Fill out the form
           below, or connect with me through my socials.
         </p>

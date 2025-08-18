@@ -10,12 +10,12 @@ import './App.css'
 function App() {
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen flex flex-col">
         <Navbar />
-    
-    <div className='p-6'>
+    <div className='flex-grow p-6'>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />

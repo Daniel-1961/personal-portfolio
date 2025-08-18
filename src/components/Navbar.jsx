@@ -1,18 +1,24 @@
 // src/components/Navbar.jsx
 import { Link } from "react-router-dom";
 
+// src/components/Navbar.jsx
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow-md">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-blue-600">My Portfolio</h1>
-        <div className="space-x-6">
-          <Link to="/" className="hover:text-blue-600">Home</Link>
-          <Link to="/about" className="hover:text-blue-600">About</Link>
-          <Link to="/projects" className="hover:text-blue-600">Projects</Link>
-          <Link to="/contact" className="hover:text-blue-600">Contact</Link>
-        </div>
-      </div>
-    </nav>
+   <nav className="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-3xl border-b border-white/10">
+  <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    {/* Logo */}
+    <h1 className="text-2xl font-bold text-white">MyPortfolio</h1>
+
+    {/* Links */}
+    <ul className="hidden md:flex space-x-8 text-gray-300">
+      <li><a href="home" className="hover:text-white">Home</a></li>
+      <li><a href="about" className="hover:text-white">About</a></li>
+      <li><a href="projects" className="hover:text-white">Projects</a></li>
+      <li><a href="contact" className="hover:text-white">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
   );
 }
+

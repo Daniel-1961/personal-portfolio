@@ -1,6 +1,5 @@
 // src/components/Projects.jsx
-import React from "react";
-
+import usePageTitle from "../hooks/usePageTitle";
 const projects = [
   {
     title: "Portfolio Website",
@@ -26,9 +25,10 @@ const projects = [
 ];
 
 const Projects = () => {
+  usePageTitle("Projects| Daniel Dawit")
   return (
-    <section id="projects" className="py-20 px-6 bg-gray-50">
-      <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
+    <section id="projects" className="py-20 px-6">
+      <h2 className="text-4xl font-bold text-center mb-12 text-white">Projects</h2>
 
       {/* Grid Layout */}
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">

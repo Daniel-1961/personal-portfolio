@@ -1,1 +1,26 @@
 @import "tailwindcss";
+/* in index.css */
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #111827, #000000);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}

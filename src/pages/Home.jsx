@@ -1,38 +1,50 @@
-
-import { Link } from "react-router-dom";
-
+// Home.jsx
+import { ArrowDown } from "lucide-react";
+import usePageTitle from "../hooks/usePageTitle";
+import { use } from "react";
 export default function Home() {
+  usePageTitle("Home| Daniel Dawit");
   return (
-    <section className="flex flex-col items-center justify-center min-h-[80vh] text-center">
+    <section
+      id="home"
+      className="min-h-screen flex flex-col items-center justify-center text-center text-white"
+    >
       {/* Name & Tagline */}
-      <h1 className="text-5xl font-bold mb-4 text-gray-800">
-        Hi, I'm <span className="text-blue-600">Daniel Dawit</span>
+      <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight">
+        Hi, I’m <span className="text-indigo-400">Daniel Dawit</span>
       </h1>
-      <p className="text-lg text-gray-600 max-w-lg mb-8">
-        I'm a passionate full-stack developer specializing in creating
-        responsive, modern web applications with React and Tailwind CSS.
+      <p className="mt-4 text-lg sm:text-xl text-gray-300 max-w-xl">
+        A passionate <span className="text-pink-400">Full-Stack Developer </span>  
+        who loves building interactive and scalable web apps.
       </p>
 
       {/* Call to Action */}
-      <div className="flex gap-4">
-        <Link
-          to="/projects"
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all"
+      <div className="mt-8 flex gap-4">
+        <a
+          href="projects"
+          className="px-6 py-3 rounded-lg bg-indigo-500 hover:bg-indigo-600 
+                     text-white font-medium transition"
         >
-          View My Work
-        </Link>
-        <Link
-          to="/contact"
-          className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-all"
+          View Projects
+        </a>
+        <a
+          href="contact"
+          className="px-6 py-3 rounded-lg border border-gray-500 hover:bg-gray-800 
+                     text-gray-300 font-medium transition"
         >
           Contact Me
-        </Link>
+        </a>
+        
       </div>
 
-      {/* Small Animation */}
-      <div className="mt-12 animate-bounce text-gray-500">
-        ↓ Scroll down to explore
+      {/* Scroll Down Indicator */}
+      <div className="absolute bottom-6 animate-bounce">
+        <a href="#about" className="flex flex-col items-center text-gray-400">
+          <ArrowDown size={28} />
+          <span className="text-sm mt-1">Scroll Down</span>
+        </a>
       </div>
     </section>
   );
 }
+
