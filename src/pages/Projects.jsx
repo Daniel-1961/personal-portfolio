@@ -5,21 +5,18 @@ const projects = [
     title: "Portfolio Website",
     description: "A personal portfolio built with React & TailwindCSS.",
     image: "/portfolio.png", // place images in public folder
-    demo: "https://your-demo-link.com",
-    code: "https://github.com/yourname/portfolio",
+    code: "https://github.com/Daniel-1961/personal-portfolio.git",
   },
   {
-    title: "E-commerce App",
-    description: "Full-stack app with React, Node, and MongoDB.",
-    image: "/ecommerce.png",
-    demo: "https://your-demo-link.com",
-    code: "https://github.com/yourname/ecommerce",
+    title: "AlphaCare",
+    description: "ML Project focuses on developing risk and predictive analytics for AlphaCare Insurance Solutions (ACIS)",
+    image: "/AlphaCare.png",
+    code: "https://github.com/Daniel-1961/Alpha_care.git",
   },
   {
-    title: "Blog Platform",
-    description: "A Markdown-based blog platform with authentication.",
+    title: "Text Processing",
+    description: "Text-processing using natural language processing library",
     image: "/blog.png",
-    demo: "https://your-demo-link.com",
     code: "https://github.com/yourname/blog",
   },
 ];
@@ -56,14 +53,6 @@ const Projects = () => {
 
             {/* Links */}
             <div className="mt-4 flex gap-4">
-              <a
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm"
-              >
-                Demo
-              </a>
               <a
                 href={project.code}
                 target="_blank"
