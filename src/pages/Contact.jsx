@@ -1,22 +1,21 @@
-
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import usePageTitle from "../hooks/usePageTitle";
 const Contact = () => {
   usePageTitle("Contact| Daniel Dawit")
   return (
-    <section id="contact" className="py-20 px-6 bg-transparent text-white">
+    <section id="contact" className="py-20 px-6 text-white">
       <h2 className="text-4xl font-bold text-center mb-12">Contact Me</h2>
 
       <div className="max-w-3xl mx-auto">
         {/* Contact Text */}
         <p className="text-center text-white mb-8">
-          Have a project in mind or just want to say hi? Fill out the form
+          Have a project in mind or just want to contact? Fill out the form
           below, or connect with me through my socials.
         </p>
 
         {/* Contact Form */}
         <form
-          action="https://formspree.io/f/your-form-id" // Replace with your Formspree endpoint
+          action="https://formspree.io/f/mrbajqvw" // Replace with your Formspree endpoint
           method="POST"
           className="space-y-6 bg-gray-50 p-8 rounded-xl shadow-md"
         >
@@ -27,7 +26,7 @@ const Contact = () => {
               type="text"
               name="name"
               required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              className="text-gray-500 w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
 
@@ -38,7 +37,7 @@ const Contact = () => {
               type="email"
               name="email"
               required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              className="text-gray-500 w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
 
@@ -49,7 +48,7 @@ const Contact = () => {
               name="message"
               rows="5"
               required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              className="text-gray-500 w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
             ></textarea>
           </div>
 
@@ -65,7 +64,7 @@ const Contact = () => {
         {/* Social Links */}
         <div className="flex justify-center space-x-6 mt-10">
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/Daniel-1961"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 hover:text-gray-900 text-2xl"
@@ -73,7 +72,7 @@ const Contact = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/your-username"
+            href="https://linkedin.com/in/daniel-dawit-36105321b"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-700 hover:text-blue-900 text-2xl"
@@ -81,18 +80,12 @@ const Contact = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://twitter.com/your-username"
+            href="https://t.me/Dani1961"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-700 text-2xl"
           >
-            <FaTwitter />
-          </a>
-          <a
-            href="mailto:your@email.com"
-            className="text-red-600 hover:text-red-800 text-2xl"
-          >
-            <FaEnvelope />
+            <FaTelegram />
           </a>
         </div>
       </div>

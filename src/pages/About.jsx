@@ -29,6 +29,7 @@ export default function About (){
                 </p>
                     <a
                     href="/resume.pdf"
+                    download
                     className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition"
                 >
                     Download CV

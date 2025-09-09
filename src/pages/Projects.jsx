@@ -15,9 +15,16 @@ const projects = [
   },
   {
     title: "Text Processing",
-    description: "Text-processing using natural language processing library",
-    image: "/blog.png",
-    code: "https://github.com/yourname/blog",
+    description: "Text-processing using python natural language processing library",
+    image: "/isr.png",
+    code: "https://github.com/Daniel-1961/ISR_project.git",
+  },
+   {
+    title: "Stock Market Forecasting and Portfolio Optimization",
+    description: `This project focuses on forecasting Tesla (TSLA) stock prices using SARIMA and
+     optimizing a diversified investment portfolio consisting of TSLA, SPY (S&P 500 ETF), and BND (Bond ETF)`,
+    image: "/tesla.png",
+    code: "https://github.com/Daniel-1961/ISR_project.git",
   },
 ];
 
