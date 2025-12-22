@@ -9,7 +9,7 @@ The purpose of this project is to practice modern frontend development while cre
 
 ## Live Demo
 
-🔗 Live site: _(Add link if deployed)_  
+🔗 Live site: https://personal-portfolio-tau-rouge.vercel.app/
 🔗 GitHub repo: https://github.com/Daniel-1961/personal-portfolio
 
 ---
