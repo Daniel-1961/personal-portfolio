@@ -1,8 +1,8 @@
 
 import usePageTitle from "../hooks/usePageTitle";
 const projects = [
-  {title:"E-commerece",
-    description:"Full-stack E-commerece app developed with React,Tailwindcss & Node.js ecosystem",
+  {title:"E-commerce Platform",
+    description:"Backend-focused project implementing REST APIs, authentication, and cart logic using Node.js and Express.",
     image:"/e-commerece.png",
     code:"https://github.com/Daniel-1961/E-commerce-.git"
 
