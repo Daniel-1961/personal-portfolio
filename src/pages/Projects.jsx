@@ -1,10 +1,16 @@
-// src/components/Projects.jsx
+
 import usePageTitle from "../hooks/usePageTitle";
 const projects = [
+  {title:"E-commerece",
+    description:"Full-stack E-commerece app developed with React,Tailwindcss & Node.js ecosystem",
+    image:"/e-commerece.png",
+    code:"https://github.com/Daniel-1961/E-commerce-.git"
+
+  },
   {
     title: "Portfolio Website",
     description: "A personal portfolio built with React & TailwindCSS.",
-    image: "/portfolio.png", // place images in public folder
+    image: "/portfolio.png",
     code: "https://github.com/Daniel-1961/personal-portfolio.git",
   },
   {
@@ -41,24 +47,24 @@ const Projects = () => {
             key={index}
             className="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 flex flex-col"
           >
-            {/* Project Image */}
+          
             <img
               src={project.image}
               alt={project.title}
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
 
-            {/* Title */}
+            
             <h3 className="text-xl font-semibold text-gray-800">
               {project.title}
             </h3>
 
-            {/* Description */}
+            
             <p className="text-gray-600 text-sm mt-2 flex-grow">
               {project.description}
             </p>
 
-            {/* Links */}
+          
             <div className="mt-4 flex gap-4">
               <a
                 href={project.code}
