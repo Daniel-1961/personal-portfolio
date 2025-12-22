@@ -25,7 +25,7 @@ export default function Home() {
     transition={{delay:0.5, duration:0.8}}
     className="mt-4 text-lg text-gray-300 max-w-2xl"
   >
-    <span className="text-white font-bold">Junior Full-Stack Developer & Machine Learning Enthusiast. </span><br />
+    <span className="text-white font-bold">Backend-focused Full-Stack Developer & Machine Learning Enthusiast. </span><br />
     I build modern web apps with React, Node.js, and Tailwind, and 
     explored AI/ML through real projects at 10Academy.
     
