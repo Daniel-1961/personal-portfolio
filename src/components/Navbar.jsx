@@ -5,12 +5,12 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-3xl border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        
-        <h1 className="text-2xl font-bold text-white">
-          <Link to="/">MyPortfolio</Link>
-        </h1>
+   <nav className="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-3xl border-b border-white/10">
+  <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    {/* Logo */}
+    <h1 className="text-2xl font-bold text-white">
+      <Link to="/">MyPortfolio</Link>
+    </h1>
 
         <div className="flex items-center">
         
